@@ -5,7 +5,7 @@ function computerPlay() {
         return "rock"
     } else if (decider == 2) {
         return "paper"
-    } else if (decider == 3) {
+    } else {
         return "scissors"
     }
 }
@@ -63,7 +63,8 @@ function game() {
     let playerScore = 0;
     for (let i = 1; i <= 5; i++) {
         let playerInput = prompt("What is your choice? Rock, paper or scissors?")
-        let result = playRound(playerInput, computerPlay())
+        let computerInput = computerPlay()
+        let result = playRound(playerInput, computerInput)
         if (result === "win") {
             playerScore += 1
         }
