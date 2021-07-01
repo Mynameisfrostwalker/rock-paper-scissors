@@ -2,12 +2,38 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" href="imagesfolder/favicon.ico"></link>
+    <link rel="shortcut icon" href="imagesfolder/favicon.ico">
     <title>Rock, paper scissors!</title>
-    <script src="scriptsfolder/first.js"></script>
+    <link rel="stylesheet" href="stylesfolder/reset.css">
+    <link rel="stylesheet" href="stylesfolder/second.css">
 </head>
 
 <body>
+    <header>
+        <h1>Rock, Paper, Scissors. Conquest!!!</h1>
+        <p>We need you to save the Holy land from the evil infidels.<br /> Choose your weapon:</p>
+    </header>
+    <main>
+        <div id="selection">
+            <div class="button">
+                <img src="imagesfolder/rock.png" alt="Rock" id="Rock">
+            </div>
+            <div class="button">
+                <img src="imagesfolder/paper.png" alt="Paper" id="Paper">
+            </div>
+            <div class="button">
+                <img src="imagesfolder/scissors.png" alt="Scissors" id="Scissors">
+            </div>
+        </div>
+        <div id="results">
+            <div id="computerResults"></div>
+            <div id="playerResults"></div>
+            <div id="explanation"></div>
+            <div id="finishButton"></div>
+        </div>
+    </main>
+
+    <script src="scriptsfolder/first.js"></script>
 </body>
 
 </html>

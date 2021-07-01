@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/13/Smirna1344.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: MedievalSharp, Algerian;
+}
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+}
+
+p {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#selection {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+img {
+    max-width: 70%;
+    max-height: 70%;
+    transition: all 0.7s;
+}
+
+img:hover {
+    transform: scale(1.3);
+}
+
+.big {
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+#finishButton {
+    display: flex;
+    justify-content: center;
+}
+
+.submitbtn {
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 2em;
+}
+
+.submitbtn:hover {
+    background-color: skyblue;
+}
+
+@media (max-width: 800px) {
+    header {
+        background-color: black;
+    }
+}
