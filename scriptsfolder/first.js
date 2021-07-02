@@ -11,6 +11,9 @@
  playerResults.appendChild(parap)
  parap.classList.add('big')
  parac.classList.add('big')
+ parap.textContent = "Your Score: 0"
+ parac.textContent = "Enemies Score: 0"
+ para.textContent = "The future of our Kingdom lies in your hands"
      // function returns either rock, paper or scissors.
  function computerPlay() {
      let decider = Math.floor(Math.random() * 4) + 1
@@ -80,7 +83,7 @@
          }
          if (result === "win") {
              playerScore += 1
-             parap.textContent = `Your score:${playerScore}`;
+             parap.textContent = `Your score: ${playerScore}`;
              if (playerScore === 5) {
                  para.textContent = "You have won the battle and vanquished our enemies."
                  finishButton.appendChild(finalButton)
@@ -92,9 +95,9 @@
          }
          if (result === "lose") {
              computerScore = computerScore + 1
-             parac.textContent = `Enemies score:${computerScore}`;
+             parac.textContent = `Enemies score: ${computerScore}`;
              if (computerScore === 5) {
-                 para.textContent = "You have brought shame upon your house, and ruin upon our country."
+                 para.textContent = "You have brought shame upon your house, and ruin upon our Kingdom."
                  finishButton.appendChild(finalButton)
                  finalButton.textContent = "Restart"
                  finishButton.classList.add("submitbtn")
@@ -108,9 +111,9 @@
  function clear() {
      computerScore = 0;
      playerScore = 0;
-     parac.textContent = ""
-     parap.textContent = ""
-     para.textContent = ""
+     parac.textContent = "Enemies Score: 0"
+     parap.textContent = "Your Score: 0"
+     para.textContent = "The future of our Kingdom lies in your hands"
      finishButton.removeChild(finalButton)
  }
 
